@@ -30,5 +30,3 @@ script:
 notifications:
   email: false
 
-addons:
-  artifacts: true
