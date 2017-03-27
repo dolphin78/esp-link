@@ -36,7 +36,7 @@ typedef struct {
 // any time, we cannot really rely on the attached MCU to call 'free' ever, so better do without.
 // Instead, we allocate a fixed pool of connections an round-robin. What this means is that the
 // attached MCU should really use at most as many SOCKET connections as there are slots in the pool.
-#define MAX_SOCKET 4
+#define MAX_SOCKET 1
 static SocketClient socketClient[MAX_SOCKET];
 static uint8_t socketNum = 0xff; // index into socketClient for next slot to allocate
 
